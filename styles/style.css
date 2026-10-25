@@ -4,7 +4,6 @@
   background-position: center;
   background-attachment: fixed;
   background-color: var(--page-bg-color);
-  overflow-x: hidden;
 }
 
 .header {
@@ -13,7 +12,6 @@
   height: 100vh;
   min-height: 668px;
   display: grid;
-  overflow-x: hidden;
   align-content: start;
 }
 
@@ -59,7 +57,7 @@
 }
 
 .header__theme-menu-button {
-  background-color: transparent;
+  cursor: pointer;
   border: none;
   text-transform: lowercase;
 }
@@ -73,20 +71,15 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(var(--link-focus), 0.4);
-}
-
-.header__theme-menu-button:focus-visible {
-  outline: none;
   border-bottom: 1px solid var(--link-focus);
 }
 
+.header__theme-menu-button:focus-visible {
+  outline: 1px solid rgba(var(--link-focus), 0.4);
+}
+
 .header__decorator {
-  font-family:
-    IBM Plex Mono,
-    Courier New,
-    Courier,
-    monospace;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -241,10 +234,9 @@
 
 .footer {
   min-width: 375px;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   display: grid;
-  position: absolute;
-  margin-top: 30px;
 }
 
 .footer__title {
