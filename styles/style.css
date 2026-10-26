@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
   background-image: var(--page-bg-image);
+  background-size: cover; 
   background-position: center;
   background-attachment: fixed;
   background-color: var(--page-bg-color);
@@ -58,7 +59,8 @@
 
 .header__theme-menu-button {
   cursor: pointer;
-  border: none;
+  background-color: transparent;
+  border: 1px solid transparent;
   text-transform: lowercase;
 }
 
@@ -67,16 +69,27 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--link-focus);
+  outline: 1px solid var(--button-hover-outline);
+}
+
+.theme_dark {
+  --button-hover-color: rgb(255 0 112 / 0.4);
+  --button-hover-outline: #ff0070;
+}
+
+.theme_light {
+  --button-hover-color: rgb(50 49 45 / 0.4);
+  --button-hover-outline: #353430;
 }
 
 .header__theme-menu-button:hover {
-  border-bottom: 1px solid var(--link-focus);
+  border: 1px solid var(--button-hover-color);
 }
 
-.header__theme-menu-button:focus-visible {
+.header__theme-menu-button:hover {
   outline: 1px solid rgba(var(--link-focus), 0.4);
 }
+
 
 .header__decorator {
   font-family: var(--main-font);
