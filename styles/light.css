@@ -7,6 +7,8 @@
   --ftr-title-color: #FFC2E6;
   --decorator: #353430;
   --link-focus: #353430;
+  --button-hover-color: rgb(50 49 45 / 0.4);
+  --button-hover-outline: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -19,6 +21,8 @@
     --ftr-title-color: #FFC2E6;
     --decorator: #353430;
     --link-focus: #353430;
+    --button-hover-color: rgb(50 49 45 / 0.4);
+    --button-hover-outline: #353430;
   }
 }
 
