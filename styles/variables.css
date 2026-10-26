@@ -6,4 +6,6 @@
   --card-text-color: #F1B2CE;
   --ftr-title-color: #db00ff;
   --font-monospace: "IBM Plex Mono", "Courier New", Courier, monospace;
+  --button-hover-color: rgb(255 0 112 / 0.4);
+  --button-hover-outline: #ff0070;
 }
