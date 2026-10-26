@@ -1,5 +1,5 @@
 :root.theme-dark {
- --page-bg-image: url(../images/cover-image-dark.png);
+  --page-bg-image: url(../images/cover-image-dark.png);
   --page-bg-color: #000028;
   --accent-color: #ff0070;
   --hdr-title-color: #db00ff;
@@ -8,6 +8,8 @@
   --content-title-text: #ff0070;
   --decorator: #ff0070;
   --link-focus: #F1B2CE;
+  --button-hover-color: rgb(255 0 112 / 0.4);
+  --button-hover-outline: #ff0070;
 }
 
 @media (prefers-color-scheme: dark) {
